@@ -17,10 +17,14 @@ public final class R {
         public static final int gallery_photo_4=0x7f020003;
         public static final int gallery_photo_5=0x7f020004;
         public static final int ic_launcher=0x7f020005;
-        public static final int logo=0x7f020006;
-        public static final int tab_grey=0x7f020007;
-        public static final int tab_white=0x7f020008;
-        public static final int tabs=0x7f020009;
+        public static final int image1=0x7f020006;
+        public static final int image2=0x7f020007;
+        public static final int image3=0x7f020008;
+        public static final int image4=0x7f020009;
+        public static final int logo=0x7f02000a;
+        public static final int tab_grey=0x7f02000b;
+        public static final int tab_white=0x7f02000c;
+        public static final int tabs=0x7f02000d;
     }
     public static final class id {
         public static final int imageSwitcher1=0x7f060002;
