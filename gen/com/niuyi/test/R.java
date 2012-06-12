@@ -16,16 +16,14 @@ public final class R {
         public static final int tab_white=0x7f020002;
         public static final int tabs=0x7f020003;
     }
-    public static final class id {
-        public static final int tabContent=0x7f050001;
-        public static final int tabHost1=0x7f050000;
-        public static final int tabs=0x7f050002;
-    }
     public static final class layout {
         public static final int main=0x7f030000;
     }
     public static final class string {
         public static final int app_name=0x7f040001;
         public static final int hello=0x7f040000;
+    }
+    public static final class style {
+        public static final int main_tab=0x7f050000;
     }
 }
