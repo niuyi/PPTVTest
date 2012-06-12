@@ -2,6 +2,9 @@ package com.niuyi.test;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class TuiJianActivity extends Activity {
@@ -10,9 +13,8 @@ public class TuiJianActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		
-		TextView view = new TextView(this);
-		view.setText("TuiJian");
-		
-		setContentView(view);
+		/*LinearLayout view = (LinearLayout)this.findViewById(R.layout.tuijian);
+		Log.d("view", "layout: " + (view == null));*/
+		setContentView(R.layout.tuijian);
 	}
 }
