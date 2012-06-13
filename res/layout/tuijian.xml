@@ -41,11 +41,11 @@
 	    android:layout_width="match_parent" 
 	    android:layout_height="0dip"
 	    android:numColumns="3"
-	    android:columnWidth="50dp"
+	    android:columnWidth="80dp"
 	    android:verticalSpacing="10dp"
 	    android:stretchMode="columnWidth"
 	    android:horizontalSpacing="5dp"
-	    android:background="#696969"
+	    android:background="#808080" 
 	    android:layout_weight="1"
 	/>
 
