@@ -54,16 +54,18 @@ public class TuiJianActivity extends Activity implements
 	public View makeView() {
 		ImageView i = new ImageView(this);
 		i.setBackgroundColor(0xFF000000);
-		i.setScaleType(ImageView.ScaleType.FIT_CENTER);
-		i.setLayoutParams(new ImageSwitcher.LayoutParams(
-				LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
-		i.setImageResource(R.drawable.gallery_photo_1);
+		i.setScaleType(ImageView.ScaleType.FIT_START);
+		i.setImageResource(R.drawable.image1);
 		return i;
 	}
 	
 	@Override
-	public void onStart(){
-		super.onStart();
+	public void onResume(){
+		super.onResume();
+		setTask();
+	}
+
+	private void setTask() {
 		if(task != null)
 			task.cancel();
 		
