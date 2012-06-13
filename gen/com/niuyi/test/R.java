@@ -17,15 +17,21 @@ public final class R {
         public static final int image3=0x7f020003;
         public static final int image4=0x7f020004;
         public static final int logo=0x7f020005;
-        public static final int photo1=0x7f020006;
-        public static final int photo2=0x7f020007;
-        public static final int photo3=0x7f020008;
-        public static final int photo4=0x7f020009;
-        public static final int photo5=0x7f02000a;
-        public static final int photo6=0x7f02000b;
-        public static final int tab_grey=0x7f02000c;
-        public static final int tab_white=0x7f02000d;
-        public static final int tabs=0x7f02000e;
+        public static final int pic_1=0x7f020006;
+        public static final int pic_10=0x7f020007;
+        public static final int pic_11=0x7f020008;
+        public static final int pic_12=0x7f020009;
+        public static final int pic_2=0x7f02000a;
+        public static final int pic_3=0x7f02000b;
+        public static final int pic_4=0x7f02000c;
+        public static final int pic_5=0x7f02000d;
+        public static final int pic_6=0x7f02000e;
+        public static final int pic_7=0x7f02000f;
+        public static final int pic_8=0x7f020010;
+        public static final int pic_9=0x7f020011;
+        public static final int tab_grey=0x7f020012;
+        public static final int tab_white=0x7f020013;
+        public static final int tabs=0x7f020014;
     }
     public static final class id {
         public static final int gridview1=0x7f060003;

@@ -1,6 +1,7 @@
 package com.niuyi.test;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -31,9 +32,10 @@ public class ImageAdapter extends BaseAdapter {
         ImageView imageView;
         if (convertView == null) {  // if it's not recycled, initialize some attributes
             imageView = new ImageView(mContext);
-            imageView.setLayoutParams(new GridView.LayoutParams(85, 85));
-            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            imageView.setPadding(8, 8, 8, 8);
+            imageView.setLayoutParams(new GridView.LayoutParams(140, 200));
+            imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            imageView.setBackgroundColor(Color.DKGRAY);
+            imageView.setPadding(6, 6, 6, 6);
         } else {
             imageView = (ImageView) convertView;
         }
@@ -44,11 +46,18 @@ public class ImageAdapter extends BaseAdapter {
 
     // references to our images
     private Integer[] mThumbIds = {
-            R.drawable.photo1,
-            R.drawable.photo2,
-            R.drawable.photo3,
-            R.drawable.photo4,
-            R.drawable.photo5,
-            R.drawable.photo6
+            R.drawable.pic_1,
+            R.drawable.pic_2,
+            R.drawable.pic_3,
+            R.drawable.pic_4,
+            R.drawable.pic_5,
+            R.drawable.pic_6,
+            R.drawable.pic_7,
+            R.drawable.pic_8,
+            R.drawable.pic_9,
+            R.drawable.pic_10,
+            R.drawable.pic_11,
+            R.drawable.pic_12,
+            
     };
 }
