@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -37,6 +38,10 @@ public class TuiJianActivity extends Activity implements
 
 		imageSwitcher = (ImageSwitcher)findViewById(R.id.imageSwitcher1);
 		imageSwitcher.setFactory(this);
+		imageSwitcher.setInAnimation(AnimationUtils.loadAnimation(this,
+                android.R.anim.slide_in_left));
+		imageSwitcher.setOutAnimation(AnimationUtils.loadAnimation(this,
+                android.R.anim.slide_out_right));
 		
 		handler = new Handler(){
 			public void handleMessage(Message message){
