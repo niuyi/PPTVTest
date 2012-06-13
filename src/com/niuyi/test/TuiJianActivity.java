@@ -9,13 +9,14 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.View;
+import android.widget.FrameLayout.LayoutParams;
 import android.view.animation.AnimationUtils;
+import android.widget.GridView;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
-import android.widget.Gallery.LayoutParams;
 
 public class TuiJianActivity extends Activity implements
 		ViewSwitcher.ViewFactory {
@@ -48,15 +49,18 @@ public class TuiJianActivity extends Activity implements
 				imageSwitcher.setImageResource(images[getImageIndex()]);
 			}
 		};
+		
+		GridView gridView = (GridView)this.findViewById(R.id.gridview1);
+		gridView.setAdapter(new ImageAdapter(this));
 	}
 
 	@Override
 	public View makeView() {
-		ImageView i = new ImageView(this);
-		i.setBackgroundColor(0xFF000000);
-		i.setScaleType(ImageView.ScaleType.FIT_START);
-		i.setImageResource(R.drawable.image1);
-		return i;
+		ImageView view = new ImageView(this);
+		view.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+		view.setScaleType(ImageView.ScaleType.FIT_START);
+		view.setImageResource(R.drawable.image1);
+		return view;
 	}
 	
 	@Override
