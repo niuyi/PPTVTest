@@ -22,10 +22,10 @@ public class TuiJianActivity extends Activity implements
 
 	private ImageSwitcher imageSwitcher;
 	private final Integer[] images = { 
-								R.drawable.gallery_photo_1,
-								R.drawable.gallery_photo_2, 
-								R.drawable.gallery_photo_3,
-								R.drawable.gallery_photo_4 };
+								R.drawable.image1,
+								R.drawable.image2, 
+								R.drawable.image3,
+								R.drawable.image4 };
 	private Handler handler;
 	private int index = 0;
 	private Timer timer = new Timer();
